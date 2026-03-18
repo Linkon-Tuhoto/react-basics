@@ -40,6 +40,8 @@ function Add(){
     <>
     <Header></Header>
     <About></About>
+    <About title = "Web Designing" />
+    <About title = "UI/UX Design" />
     </>
   );
 }
