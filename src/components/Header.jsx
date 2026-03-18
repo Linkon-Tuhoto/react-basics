@@ -3,6 +3,7 @@ import { useState } from "react";
 function Header(){
     const [open, Setopen] = useState(false);
     const [theme, Settheme] = useState("light");
+    const [show, Setshow] = useState(false);
     return(
         <div className="theme">
             {/*Navbar*/}
@@ -39,6 +40,14 @@ function Header(){
             <div className="rounded-3xl bg-amber-200 p-4 hover:bg-amber-400 hover:scale-105 transition-all">Feature 4</div>
             <div className="rounded-3xl bg-amber-200 p-4 hover:bg-amber-400 hover:scale-105 transition-all">Feature 5</div>
             <div className="rounded-3xl bg-amber-200 p-4 hover:bg-amber-400 hover:scale-105 transition-all">Feature 6</div>
+        </div>
+
+        {/*About Me*/}
+        <div>
+            <p>
+                Hi, I Am Linkon Tuhoto 
+                {}
+            </p>
         </div>
         </div>
     );

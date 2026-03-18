@@ -32,11 +32,15 @@ import './App.css'
   )
 }*/
 
-import Header from './components/header.jsx'
+import Header from './components/Header.jsx';
+import About from './components/About.jsx';
 
 function Add(){
   return(
+    <>
     <Header></Header>
+    <About></About>
+    </>
   );
 }
 
