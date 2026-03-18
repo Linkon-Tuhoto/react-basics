@@ -43,12 +43,6 @@ function Header(){
         </div>
 
         {/*About Me*/}
-        <div>
-            <p>
-                Hi, I Am Linkon Tuhoto 
-                {}
-            </p>
-        </div>
         </div>
     );
 }
