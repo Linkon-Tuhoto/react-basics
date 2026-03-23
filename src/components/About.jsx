@@ -1,13 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import React from 'react';
 
-function About(props) {
+function About(props, {id, children}) {
     const[Show, setShow] = useState(false);
     const[like, setlike] = useState(0);
     const[Clicking, setClicking] = useState(false);
+    const[visible,setvisible] = useState(false);
+    
+    useEffect(() => {
+      function onScrolling(){
+        const top = document.getElementById(id).getBoundingClientRect().top;
+        if(top < window.innerHeight - 100)setvisible(true);
+      }
+      window.addEventListener("scroll", onScrolling);
+      onScrolling();
+      return () => 
+        window.removeEventListener("scroll", onScrolling);
+    }, [id]);
   return (
     <>
+    <div id={id} className={`transition-all duration-700 ease-in-out transform ${visible ? "opacity-0 translate-y-0" : "opacity-100 translate-y-10"}`}>
     <div className="text-center">
         <p>Hello my name is Linkon <br/>
             {Show && "And am a frontend developer"}
@@ -26,6 +39,11 @@ function About(props) {
       <h1>{props.title}</h1>
       <button onClick={() => setClicking(!Clicking)}>{ Clicking ? "opened" : "open it to read"}</button>
     </div>
+
+    {/*useeffect*/}
+    {children}
+    </div>
+
 
     </>
   );
