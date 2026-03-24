@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 
 import React from 'react';
 
-function About(props, {id, children}) {
+function About(props) {
     const[Show, setShow] = useState(false);
     const[like, setlike] = useState(0);
     const[Clicking, setClicking] = useState(false);
     const[visible,setvisible] = useState(false);
     
-    useEffect(() => {
+    {/*useEffect(() => {
       function onScrolling(){
         const top = document.getElementById(id).getBoundingClientRect().top;
         if(top < window.innerHeight - 100)setvisible(true);
@@ -17,10 +17,10 @@ function About(props, {id, children}) {
       onScrolling();
       return () => 
         window.removeEventListener("scroll", onScrolling);
-    }, [id]);
+    }, [id]);*/}
   return (
     <>
-    <div id={id} className={`transition-all duration-700 ease-in-out transform ${visible ? "opacity-0 translate-y-0" : "opacity-100 translate-y-10"}`}>
+    {/*<div id={id} className={`transition-all duration-700 ease-in-out transform ${visible ? "opacity-0 translate-y-0" : "opacity-100 translate-y-10"}`}>*/}
     <div className="text-center">
         <p>Hello my name is Linkon <br/>
             {Show && "And am a frontend developer"}
@@ -41,8 +41,6 @@ function About(props, {id, children}) {
     </div>
 
     {/*useeffect*/}
-    {children}
-    </div>
 
 
     </>

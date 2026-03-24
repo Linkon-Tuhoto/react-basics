@@ -42,6 +42,15 @@ function Header(){
             <div className="rounded-3xl bg-amber-200 p-4 hover:bg-amber-400 hover:scale-105 transition-all">Feature 6</div>
         </div>
 
+        <div className=" p-5 text-center font-semibold text-2xl sm:text-lg dark:bg-pink-600 dark:text-white">
+            <div className="flex justify-start mb-8 rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all" >Feature 1</div>
+            <div className="flex justify-start mb-8 rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 2</div>
+            <div className="flex justify-start mb-8 rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 3</div>
+            <div className="flex justify-start mb-8 rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 4</div>
+            <div className="flex justify-start mb-8 rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 5</div>
+            <div className="flex justify-start mb-8 rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 6</div>
+        </div>
+
         {/*About Me*/}
         </div>
     );
