@@ -42,13 +42,27 @@ function Header(){
             <div className="rounded-3xl bg-amber-200 p-4 hover:bg-amber-400 hover:scale-105 transition-all">Feature 6</div>
         </div>
 
-        <div className=" p-5 text-center font-semibold text-2xl sm:text-lg dark:bg-pink-600 dark:text-white">
-            <div className="flex justify-start mb-8 rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all" >Feature 1</div>
-            <div className="flex justify-start mb-8 rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 2</div>
-            <div className="flex justify-start mb-8 rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 3</div>
-            <div className="flex justify-start mb-8 rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 4</div>
-            <div className="flex justify-start mb-8 rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 5</div>
-            <div className="flex justify-start mb-8 rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 6</div>
+        <div className="relative before:absolute before:top-0 before:bottom-0 before:left-1/2 before:w-1 before:bg-gray-400">
+            <div className="flex justify-start md:justify-start mb-8">
+                <div className="rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all" >Feature 1</div>
+                <div className="bg-blue-500 circle absolute top-1/12 right-1/2 w-4 h-4 rounded-full"></div>
+                <div className="bg-gray-400 before:absolute before:top-1/12 before:left-0 before:right-1/2 before:w-2"></div>
+            </div>
+            <div className="flex justify-start md:justify-end mb-8">
+                <div className="rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 2</div>
+            </div>
+            <div className="flex justify-start md:justify-start mb-8">
+                <div className="rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 3</div>
+            </div>
+            <div className="flex justify-start md:justify-end mb-8">
+                <div className="rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 4</div>
+            </div>
+            <div className="flex justify-start md:justify-start mb-8">
+                <div className="rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 5</div>
+            </div>
+            <div className="flex justify-start md:justify-end mb-8">
+                <div className="rounded-3xl bg-amber-200 p-40 hover:bg-amber-400 hover:scale-105 transition-all">Feature 6</div>
+            </div>
         </div>
 
         {/*About Me*/}
