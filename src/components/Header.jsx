@@ -6,6 +6,7 @@ function Header(){
     const [show, Setshow] = useState(false);
     const [popup, setPopup] = useState(false);
     return(
+        <div onClick={() => setPopup(!popup)}>
         <div className="theme">
             {/*Navbar*/}
         <div className="flex justify-between items-center text-amber-800 dark:bg-amber-800 dark:text-white p-5">
@@ -52,13 +53,15 @@ function Header(){
                     </div>
                 <div className="bg-blue-500 circle absolute top-1/12 right-1/2 w-4 h-4 rounded-full transform translate-x-1/2"></div>
                 {popup && (
-                    <div className="fixed h-8/12 w-11/12 inset-0 bg-white/40 backdrop-blur-md p-30 z-1000 space-y-50 text-center mt-0">
+                    <div onClick={() => setPopup(!popup)} className="fixed h-8/12 w-11/12 inset-0 bg-white/40 backdrop-blur-md p-30 z-1000 space-y-50 text-center mt-0">
+                        <div onClick={(e) => e.stopPropagation() } className="bg-white rounded-lg">
                         <div className="ml-[130%] sm:ml-[100%]">
                         <button onClick={() => setPopup(!popup)} className="cursor-pointer">X</button>
                         </div>
                         <div>
                         <h2>Web development</h2>
                         <p>I build responsive websites using React and Tailwind</p>
+                        </div>
                         </div>
                     </div>
                 )}
@@ -86,6 +89,7 @@ function Header(){
         </div>
 
         {/*About Me*/}
+        </div>
         </div>
     );
 }
