@@ -1,10 +1,18 @@
-import { useState } from "react";  
+import { useEffect, useState } from "react";  
 
 function Header(){
     const [open, Setopen] = useState(false);
     const [theme, Settheme] = useState("light");
     const [show, Setshow] = useState(false);
     const [popup, setPopup] = useState(false);
+    useEffect(() => {
+        if(popup){
+            document.body.style.overflow = "hidden";
+        };
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [popup]);
     return(
         <div onClick={() => setPopup(!popup)}>
         <div className="theme">
