@@ -34,6 +34,7 @@ import './App.css'
 
 import Header from './components/Header.jsx';
 import About from './components/About.jsx';
+import Contact from './components/contact.jsx';
 
 function Add(){
   return(
@@ -42,6 +43,7 @@ function Add(){
     <About></About>
     <About title = "Web Designing" />
     <About title = "UI/UX Design" />
+    <Contact />
     </>
   );
 }
